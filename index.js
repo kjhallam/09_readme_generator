@@ -42,18 +42,15 @@ function writeToFile(fileName, data) {
          err ? console.log(err) : console.log("Success!")
       })
 }
-        
         // function to initialize program
-            //***Need to apply an overwrite function to save a new file
-        function init() {
-            
-             }
+            //Need to apply an overwrite function to save a new README FILE
+    //     function init() {
+    //         then
+
+    //  }
             
             // function call to initialize program
-
-
-
-init();
+//init();
             
 
 

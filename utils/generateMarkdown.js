@@ -4,10 +4,13 @@ function generateMarkdown(answers) {
 
 GITHUB
 ##${answers.github}\n
+---
 USER STORY\n------\n
 ##${answers.userStory}\n
+---
 LICENSE TYPE\n------\n
 ${answers.licenseType}\n
+---
 
 
 
