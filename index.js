@@ -4,7 +4,8 @@ const generateMD = require('./utils/generateMarkdown.js');
 
 
 // array of questions for user
-const questions = [
+const questions = () =>{
+    return inquirer.prompt([
     {
         type:'input',
         message: 'What is the project title?',
@@ -32,9 +33,8 @@ const questions = [
         name: 'licenseType',
         choices: ['MIT', 'Apache', 'Creative Commons']
     }
-];
-
-
+]);
+}
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -44,34 +44,21 @@ function writeToFile(fileName, data) {
 }
         // function to initialize program
             //Need to apply an overwrite function to save a new README FILE
-    //     function init() {
-    //         then
+ const init = async() => {
+     console.log(writeToFile);
+     try {
+         const answers = await questions();
 
-    //  }
-            
-            // function call to initialize program
-//init();
-            
+         const md = generateMD(answers);
 
+         await fs.writeFileSync('README.md', md);
 
+         console.log('Successful README.md file!')
+     } catch (err) {
+         console.log(err);
+     }
 
-    
-
-    // WHEN I enter my project title
-        // THEN this is displayed as the title of the README
-
-    // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-        // information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-
-    // choose a license for my application from a list of options
-        // Display badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-
-    // WHEN I enter my GitHub username
-        // THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-
-    // WHEN I enter my email address
-        // THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-
-    // WHEN I click on the links in the Table of Contents
-        // THEN I am taken to the corresponding section of the README
-
+    }
+   
+init();
+   

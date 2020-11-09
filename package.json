@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "create-readme": "^2.1.3",
-    "inquirer": "^6.3.1"
+    "inquirer": "^6.5.2"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kjhallam/09_readme_generator.git"
