@@ -10,32 +10,37 @@ const promptQuestions = () =>{
 const questions = [
     {
         type:'input',
-        message: 'What is the project title?',
+        message: 'What is the Project Title?',
         name: 'projectTitle',
     },
     {
         type:'input',
-        message: 'What is the GitHub username?',
+        message: 'What is the GitHub Username?',
         name: 'githubUser',
     },
     {
         type:'input',
-        message: 'What is the user story?',
-        name: 'userStory',
+        message: 'What is your Description?',
+        name: 'describe',
     },
     {
         type:'input',
-        message: 'What are the project requirements?',
+        message: 'What are the Project Requirements?',
         name: 'requirements',
     },
     {
         type:'list',
-        message: 'What is your license?',
+        message: 'What is your License?',
         name: 'licenseType',
         choices: ['MIT', 'Apache', 'Creative Commons']
     },
-];
+    {
+        type:'list',
+        message: 'What is the Installation process?',
+        name: 'installProcess',
+    },
 
+];
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -44,16 +49,14 @@ function writeToFile(fileName, data) {
         console.log("Success!")
       })
 }
-
-
-    
+  
 // function to initialize program
 function init () {
     promptQuestions().then(answers => {
         axios.get('https://api.github.com/users/' + answers.githubUser).then(results => {
             answers.githubUser = results.data.html_url;
             const content = generateMD(answers)
-            writeToFile('./README.md', content);
+            writeToFile('./SampleREADME.md', content);
         })
     })
 }
