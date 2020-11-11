@@ -1,11 +1,13 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMD = require('./utils/generateMarkdown.js');
-
+const axios = require('axios');
+const promptQuestions = () =>{
+    return inquirer.prompt(questions)
+};   
 
 // array of questions for user
-const questions = () =>{
-    return inquirer.prompt([
+const questions = [
     {
         type:'input',
         message: 'What is the project title?',
@@ -13,8 +15,8 @@ const questions = () =>{
     },
     {
         type:'input',
-        message: 'What is the GitHub url?',
-        name: 'githubLink',
+        message: 'What is the GitHub username?',
+        name: 'githubUser',
     },
     {
         type:'input',
@@ -26,39 +28,34 @@ const questions = () =>{
         message: 'What are the project requirements?',
         name: 'requirements',
     },
-
     {
         type:'list',
         message: 'What is your license?',
         name: 'licenseType',
         choices: ['MIT', 'Apache', 'Creative Commons']
-    }
-]);
-}
+    },
+];
+
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile( fileName+ '.md', data, (err) => {
-         err ? console.log(err) : console.log("Success!")
+    fs.writeFile( fileName, data, (err) => {
+        if(err) throw err 
+        console.log("Success!")
       })
 }
-        // function to initialize program
-            //Need to apply an overwrite function to save a new README FILE
- const init = async() => {
-     console.log(writeToFile);
-     try {
-         const answers = await questions();
 
-         const md = generateMD(answers);
 
-         await fs.writeFileSync('README.md', md);
-
-         console.log('Successful README.md file!')
-     } catch (err) {
-         console.log(err);
-     }
-
-    }
+    
+// function to initialize program
+function init () {
+    promptQuestions().then(answers => {
+        axios.get('https://api.github.com/users/' + answers.githubUser).then(results => {
+            answers.githubUser = results.data.html_url;
+            const content = generateMD(answers)
+            writeToFile('./README.md', content);
+        })
+    })
+}
    
 init();
-   

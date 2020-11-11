@@ -1,41 +1,38 @@
-# Generate README
 
-LICENSE TYPE
-------
+# readme
 
-MIT
+## LICENSE TYPE
 
-[License Type]: https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR> "License Badge"
---- 
-Table of Contents
+---
 
-  1. [GITHUB](#answers.githubLink)
-  2. [USER STORY](#answers.userStory)
-  3. [REQUIREMENTS](#answers.requirements)
-  2. [MOCK-UP](#my-second-title)
+[![License: Apache](TBD - Grab License Badge)]
+ 
+## Table of Contents
+
+---
+
+  1. [GITHUB](#github)
+  2. [USER STORY](#userStory)
+  3. [REQUIREMENTS](#requirements)
+  2. [MOCK-UP](#mock-up)
   
-GITHUB
-##undefined
-
----
-USER STORY
-------
-
-##Build a ReadMe. md file that automatically generates a new project file after answering a series of questions.
-
----
-REQUIREMENTS
-------
-
-File must generate a new markdown file each time it is ran. 
+## GITHUB
 
 ---
 
-MOCK-UP
-------
+[https://github.com/kjhallam](http://github.com/https://github.com/kjhallam)
 
+## USER STORY
 
+---
 
+adsfadfasd
+
+## REQUIREMENTS
+
+---
+
+adfads
 
 
 

@@ -1,31 +1,42 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
-  return `# ${answers.projectTitle}
+  return `
+# ${answers.projectTitle}
 
-LICENSE TYPE\n------\n
-${answers.licenseType}\n
-[License Type]: https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR> "License Badge"
---- 
-Table of Contents
+## LICENSE TYPE
 
-  1. [GITHUB](#answers.githubLink)
-  2. [USER STORY](#answers.userStory)
-  3. [REQUIREMENTS](#answers.requirements)
-  2. [MOCK-UP](#my-second-title)
+---
+
+${answers.licenseType === "Apache" ? "[![License: Apache](TBD - Grab License Badge)]" : 
+  answers.licenseType === "Creative Commons" ? "[![License: CC](TBD - Grab License Badge)]" : 
+  answers.licenseType === "MIT" ? "[![License: MIT](TBD - Grab License Badge)]" : "None"}
+ 
+## Table of Contents
+
+---
+
+  1. [GITHUB](#github)
+  2. [USER STORY](#userStory)
+  3. [REQUIREMENTS](#requirements)
+  2. [MOCK-UP](#mock-up)
   
-GITHUB
-##${answers.github}\n
----
-USER STORY\n------\n
-##${answers.userStory}\n
----
-REQUIREMENTS\n------\n
-${answers.requirements}\n
+## GITHUB
+
 ---
 
-MOCK-UP\n------\n
+[${answers.githubUser}](http://github.com/${answers.githubUser})
 
+## USER STORY
 
+---
+
+${answers.userStory}
+
+## REQUIREMENTS
+
+---
+
+${answers.requirements}
 
 
 
