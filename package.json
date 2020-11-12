@@ -10,16 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.0",
-    "inquirer": "^6.5.2"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kjhallam/09_readme_generator.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/kjhallam/09_readme_generator/issues"
-  },
-  "homepage": "https://github.com/kjhallam/09_readme_generator#readme"
+    "inquirer": "^6.3.1"
+  }
 }
