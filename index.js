@@ -15,6 +15,11 @@ const questions = [
     },
     {
         type:'input',
+        message: 'What is the github repo URL?',
+        name: 'projectURL',
+    },
+    {
+        type:'input',
         message: 'What is the GitHub Username?',
         name: 'githubUser',
     },
@@ -25,14 +30,34 @@ const questions = [
     },
     {
         type:'input',
-        message: 'What are the Project Requirements?',
-        name: 'requirements',
+        message: 'What are the Installation instructions?',
+        name: 'install',
+    },
+    {
+        type:'input',
+        message: 'Describe how to use this project.',
+        name: 'usage',
+    },
+    {
+        type:'input',
+        message: 'Enter how to contribute to the project.',
+        name: 'contribute',
+    },
+    {
+        type:'input',
+        message: 'Enter test instructions for the project.',
+        name: 'test',
+    },
+    {
+        type:'input',
+        message: 'What is your email address?',
+        name: 'email',
     },
     {
         type:'list',
         message: 'What is your License?',
         name: 'licenseType',
-        choices: ['MIT', 'Apache', 'Creative Commons']
+        choices: ['MIT', 'Apache', 'Creative Commons', 'None']
     },
 ];
 
@@ -56,3 +81,4 @@ function init () {
 }
    
 init();
+
