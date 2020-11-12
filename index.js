@@ -34,12 +34,6 @@ const questions = [
         name: 'licenseType',
         choices: ['MIT', 'Apache', 'Creative Commons']
     },
-    {
-        type:'list',
-        message: 'What is the Installation process?',
-        name: 'installProcess',
-    },
-
 ];
 
 // function to write README file
@@ -56,7 +50,7 @@ function init () {
         axios.get('https://api.github.com/users/' + answers.githubUser).then(results => {
             answers.githubUser = results.data.html_url;
             const content = generateMD(answers)
-            writeToFile('./README.md', content);
+            writeToFile('./README-Example.md', content);
         })
     })
 }

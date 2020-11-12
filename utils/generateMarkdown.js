@@ -2,7 +2,7 @@
 function generateMarkdown(answers) {
   return `
    [🔗]:(https://github.com/kjhallam/09_readme_generator.git)
-  #${answers.projectTitle}
+  # ${answers.projectTitle}
 
 ---
 ## LICENSE TYPE
@@ -28,10 +28,6 @@ answers.licenseType === "MIT" ? "[![License: MIT](https://img.shields.io/badge/l
 [${answers.githubUser}](http://github.com/${answers.githubUser})
 
 ---
-
-## ISTALLATION
-
-${answers.installProcess}
 
 ---
 
