@@ -56,7 +56,7 @@ function init () {
         axios.get('https://api.github.com/users/' + answers.githubUser).then(results => {
             answers.githubUser = results.data.html_url;
             const content = generateMD(answers)
-            writeToFile('./SampleREADME.md', content);
+            writeToFile('./README.md', content);
         })
     })
 }
