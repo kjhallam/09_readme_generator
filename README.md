@@ -1,49 +1,66 @@
 
-   [🔗]:(https://github.com/kjhallam/09_readme_generator.git)
+# 🔗 [Readme Generator](https://github.com/kjhallam/09_readme_generator)
 
-# 🔗 ReadMe Generator
+## LICENSE
 
-## LICENSE TYPE
-
-[![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen)]
-
----
-
-## Table of Contents
-
-  1. [GITHUB](#github)
-  2. [DESCRIPTION](#description)
-  3. [REQUIREMENTS](#requirements)
-  4. [CONTACT](#contact)
-  
----
-  
-## GITHUB
-
-[https://github.com/kjhallam](http://github.com/https://github.com/kjhallam)
+![Badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ---
 
 ## 📓 DESCRIPTION
 
-Generate a new readme file using a series of questions.
+creating a new readme.md file automatically
 
 ---
 
-## 📓 REQUIREMENTS
+## Table of Contents
 
-Install Inquirer & Axios
+  1. [DESCRIPTION](#description)
+  2. [INSTALLATION](#installation)
+  3. [USAGE](#usage)
+  4. [CONTRIBUTING](#contributing)
+  5. [TEST](#test)
+  6. [GITHUB](#github)
+  7. [QUESTIONS](#questions)
+  
+---
+
+## 📓 INSTALLATION
+
+npm i, npm inquirer, npm axios
 
 ---
 
-## 🎥 Preview
+## 📓 USAGE
 
-![Video](/assets/readme-sample.gif)
+generates a new markdown file using a series of prompts/questions
 
 ---
 
-## 💻 CONTACT
+## 📓 CONTRIBUTING
 
-If any questions concerning the use of the markdown file.
+n/a
 
-## ✉
+---
+
+## 📓 TEST
+
+n/a
+
+---
+
+## :octocat: GITHUB
+
+[https://github.com/kjhallam](http://github.com/https://github.com/kjhallam)
+
+---
+
+## 🎥 PREVIEW
+
+![Video](./assets/readme-sample.gif)
+
+---
+
+## 💻 QUESTIONS
+
+If any questions concerning the use of the markdown file contact me at ✉️ [Email](kjhallam321@gmail.com).

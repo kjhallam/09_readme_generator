@@ -59,6 +59,10 @@ ${answers.test}
 
 ---
 
+## 🎥 PREVIEW
+
+---
+
 ## 💻 QUESTIONS
 
 If any questions concerning the use of the markdown file contact me at ✉️ [Email](${answers.email}).
