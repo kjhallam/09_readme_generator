@@ -1,5 +1,5 @@
 
-# 🔗 [Readme Generator](https://github.com/kjhallam/09_readme_generator)
+# 🔗 [NOTE TAKER](https://github.com/kjhallam/11_note_taker)
 
 ## LICENSE
 
@@ -9,7 +9,7 @@
 
 ## 📓 DESCRIPTION
 
-creating a new readme.md file automatically
+AS A user, I want to be able to write and save notes I WANT to be able to delete notes I've written before SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ---
 
@@ -27,13 +27,13 @@ creating a new readme.md file automatically
 
 ## 📓 INSTALLATION
 
-npm i, npm inquirer, npm axios
+``` Installed NPM I - NPM I Express - NPM I UUID ```
 
 ---
 
 ## 📓 USAGE
 
-generates a new markdown file using a series of prompts/questions
+Application should allow users to create and save notes. Application should allow users to view previously saved notes. Application should allow users to delete previously saved notes.
 
 ---
 
@@ -43,9 +43,9 @@ n/a
 
 ---
 
-## 📓 TEST
+## 🧪 TEST
 
-n/a
+Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file. (GET - POST - DELETE)
 
 ---
 
@@ -56,8 +56,6 @@ n/a
 ---
 
 ## 🎥 PREVIEW
-
-![Video](./assets/readme-sample.gif)
 
 ---
 

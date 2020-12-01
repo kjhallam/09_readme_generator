@@ -17,7 +17,7 @@ ${answers.describe}
 
 ---
 
-## Table of Contents
+## 📋 Table of Contents
 
   1. [DESCRIPTION](#description)
   2. [INSTALLATION](#installation)
@@ -25,11 +25,12 @@ ${answers.describe}
   4. [CONTRIBUTING](#contributing)
   5. [TEST](#test)
   6. [GITHUB](#github)
+  7. [PREVIEW](#preview)
   7. [QUESTIONS](#questions)
   
 ---
 
-## 📓 INSTALLATION
+## ⬇️ INSTALLATION
 
 ${answers.install}
 
@@ -47,7 +48,7 @@ ${answers.contribute}
 
 ---
 
-## 📓 TEST
+## 🧪 TEST
 
 ${answers.test}
 
@@ -63,7 +64,7 @@ ${answers.test}
 
 ---
 
-## 💻 QUESTIONS
+## ❔ QUESTIONS
 
 If any questions concerning the use of the markdown file contact me at ✉️ [Email](${answers.email}).
 `;
